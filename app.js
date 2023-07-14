@@ -1,15 +1,11 @@
 'use strict';
 
-const express = require('express');
-const app = express();
-const port =  process.env.PORT || 3000;
+const app = require('./config/server');
+const profileRoute = require('./routes/profile');
+// const commentRoutes = require('./routes/comment');
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
+// Mount the profile route
+app.use('/', profileRoute);
+// app.use('/api/comments', commentRoutes);
 
-// routes
-app.use('/', require('./routes/profile')());
-
-// start server
-const server = app.listen(port);
-console.log('Express started. Listening on %s', port);
+module.exports = app;
