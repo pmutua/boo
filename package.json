@@ -1,16 +1,24 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "The application is a web-based platform that allows users to create profiles, post comments, and interact with the comments through voting. The application stores profile data and comments in a MongoDB database. It provides routes for creating profiles, retrieving profiles by ID, posting comments, retrieving and filtering comments, and performing comment voting.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "mocha tests/**/*.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^7.3.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "mongodb-memory-server": "^8.13.0"
   }
 }
