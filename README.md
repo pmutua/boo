@@ -60,7 +60,7 @@ The response renders the profile page with the retrieved profile details.
 
 `GET /profile/64b1473ce1e973d1265c7a5d`
 
-![Screenshot profile page](public/static/screenshot.png)
+![Screenshot profile page](public/static/profile_screenshot.png)
 
 ## Create Profile
 
